@@ -61,48 +61,168 @@ body {
     background-color: var(--Beige);
     font-family: Comfortaa-Light, Arial, Helvetica, sans-serif;
     margin: 0 auto;
+    line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: Comfortaa-Bold, Arial, Helvetica, sans-serif;;
-    padding: 10px;
-}
-
+/*---------HEADER---------*/
 header {
     background-color: var(--Teal);
 }
 
 nav {
     text-align: right;
-    padding-right: 25px;
+    padding: 15px;
+    font-family: Comfortaa-Bold, Arial, Helvetica, sans-serif;
 }
 
-nav ul li {
+nav li {
     display: inline;
     margin: 10px;
 }
 
-h1 {
-    font-size: 2em;
+nav a {
+    text-decoration: none;
     color: var(--Orange);
-    display: inline;
+ }
+
+
+h1, h2, h3, h4, h5 {
+    font-family: Comfortaa-Bold, Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
+    float: left;
+    font-size: 1em;
+    color: var(--Orange);
 }
 
 h2 {
     font-size: 4em;
     text-align: center;
-
 }
 
 h3 {
-
+    font-size: 2em;
 }
+
+h4 {
+    font-size: 1em;
+    text-align: center;
+}
+
 
 img {
-    max-width: 80%;
+    max-width: 100%;
 }
 
+section  {
+    text-align: center;
+}
+
+/*
+p {
+    max-width: 400px;
+    margin: 0 auto;
+}
+*/
+#about {
+    background-image: url("images/Claire-Singara.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 175px;
+    padding-bottom: 175px;
+    color: white;
+}
+
+#about p {
+    margin: 50px;
+    font-size: 2em;
+}
+
+#books {
+    width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+}
+#books p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1em;
+}
+
+#books img {
+    border: solid white 10px;
+    width: 380px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    
+}
+
+#bookOne, #bookTwo, #bookThree, #bookFour {
+    width: 400px;
+}
+
+#events {
+    background-color: var(--Teal);
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+#locationOne, #locationTwo, #locationThree, #locationFour {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#events h3 {
+    padding-top: 15px;
+}
+
+#events p {
+    margin: 0 auto;
+    max-width: 400px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+}
+
+#newsletter {
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#newsletter h2, footer h2 {
+    font-size: 3em;
+}
+
+#newsletter input {
+    width: 400px;
+    height: 50px;
+    border: solid darkgray 3px;
+    margin-bottom: 25px;
+}
+
+#mySubmit {
+    background-color: var(--Apple);
+}
+
+#events a {
+    font-size: 1em;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    background-color: var(--Apple);
+    border: solid white 3px;
+    font-family: Comfortaa-Bold, Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+
 footer {
-    background-color: gray;
+    background-color: lightgray;
 }
 
