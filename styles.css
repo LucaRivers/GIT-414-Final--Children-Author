@@ -84,6 +84,9 @@ nav a {
     text-decoration: none;
     color: var(--Orange);
  }
+ nav a:hover {
+    color: var(--Apple);
+  }
 
 
 h1, h2, h3, h4, h5 {
@@ -120,12 +123,7 @@ section  {
     text-align: center;
 }
 
-/*
-p {
-    max-width: 400px;
-    margin: 0 auto;
-}
-*/
+
 #about {
     background-image: url("images/Claire-Singara.jpg");
     background-repeat: no-repeat;
@@ -143,9 +141,10 @@ p {
 #books {
     width: 400px;
     margin: 0 auto;
-    padding: 50px;
+    /* padding: 50px; */
 }
 #books p {
+    
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 1em;
@@ -158,7 +157,6 @@ p {
     object-fit: cover;
     margin-top: 40px;
     margin-bottom: 25px;
-    
 }
 
 #bookOne, #bookTwo, #bookThree, #bookFour {
@@ -171,10 +169,101 @@ p {
     padding-bottom: 100px;
 }
 
+
+
+#locationGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 50px;
+    /* background-color: lightblue; */
+}
+
+#booksGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 50px;
+    /* background-color: lightblue; */
+}
+/*-------------MED SCREEN SIZE----------------*/
+@media screen and (min-width:900px){
+    #books { 
+        width: 900px;
+    }
+
+    #booksGrid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 900px;
+    }
+
+    #locationGrid {
+        grid-template-columns: repeat(2, 1fr);
+        /* background-color: var(--Orange); */
+        /* border: solid red 5px; */
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    #about {
+        background-image: url("images/hero.jpg");
+    }
+}
+
+/*-------------LARGE SCREEN SIZE----------------*/
+@media screen and (min-width:1450px){
+
+    #books { 
+        width: 1450px;
+    }
+
+    #booksGrid {
+        grid-template-columns: repeat(4, 1fr);
+        /* background-color: lavender;
+        border: solid red 5px; */
+        width: 1450px;
+        gap: 0px;
+    }
+
+    #books img {
+        border: solid white 10px;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+
+    #bookOne, #bookTwo, #bookThree, #bookFour {
+        width: 350px;
+    }
+
+    #locationGrid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 100px;
+        /* border: solid red 5px; */
+        width: 1350px;
+        margin: 0 auto;
+        /* background-color: var(--Apple); */
+    }
+
+    #about {
+        background-image: url("images/hero.jpg");
+    }
+}
+
+/*
+.grid-col-span {
+    grid-column: span 2;
+}
+*/
+
 #locationOne, #locationTwo, #locationThree, #locationFour {
     text-align: left;
     max-width: 400px;
     margin: 0 auto;
+    /* background-color: lightblue; */
+    /* border: solid coral 2px; */
 }
 
 #events h3 {
@@ -186,6 +275,22 @@ p {
     max-width: 400px;
     margin-bottom: 25px;
     padding-top: 25px;
+}
+
+#events a {
+    font-size: 1em;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    background-color: var(--Apple);
+    border: solid white 3px;
+    font-family: Comfortaa-Bold, Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+#events a:hover {
+    background-color: var(--Orange);
 }
 
 #newsletter {
@@ -209,17 +314,6 @@ p {
     background-color: var(--Apple);
 }
 
-#events a {
-    font-size: 1em;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-decoration: none;
-    background-color: var(--Apple);
-    border: solid white 3px;
-    font-family: Comfortaa-Bold, Arial, Helvetica, sans-serif;
-    color: black;
-}
 
 
 footer {
