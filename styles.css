@@ -57,6 +57,10 @@ table {
     --Apple: #D74452;
   }
 
+.hidden {
+    display: none;
+}
+
 body {
     background-color: var(--Beige);
     font-family: Comfortaa-Light, Arial, Helvetica, sans-serif;
@@ -73,6 +77,7 @@ header {
 nav {
     text-align: right;
     padding: 15px;
+    padding-top: 20px;
     font-family: Comfortaa-Bold, Arial, Helvetica, sans-serif;
 }
 
@@ -94,15 +99,15 @@ h1, h2, h3, h4, h5 {
     font-family: Comfortaa-Bold, Arial, Helvetica, sans-serif;
 }
 
-
 h1 {
     float: left;
-    font-size: 1em;
+    font-size: 1.5em;
+    margin-top: -5px;
     color: var(--Orange);
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 5em;
     text-align: center;
 }
 
@@ -132,17 +137,22 @@ section  {
     padding-top: 175px;
     padding-bottom: 175px;
     color: white;
+    max-height: 600px;
 }
 
 #about p {
     margin: 50px;
+    padding: 50px;
     font-size: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: rgba(255,255,255,0.8);
+    border: solid var(--Apple) 5px; */
 }
 
 #books {
     width: 400px;
     margin: 0 auto;
-    /* padding: 50px; */
 }
 #books p {
     
@@ -160,6 +170,11 @@ section  {
     margin-bottom: 25px;
 }
 
+#books img:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
 #bookOne, #bookTwo, #bookThree, #bookFour {
     width: 400px;
 }
@@ -170,14 +185,11 @@ section  {
     padding-bottom: 100px;
 }
 
-
-
 #locationGrid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     gap: 50px;
-    /* background-color: lightblue; */
 }
 
 #booksGrid {
@@ -185,24 +197,18 @@ section  {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     gap: 50px;
-    /* background-color: lightblue; */
+    padding-bottom: 100px;
 }
-
-
-/*
-.grid-col-span {
-    grid-column: span 2;
-}
-*/
 
 #locationOne, #locationTwo, #locationThree, #locationFour {
     text-align: left;
     max-width: 400px;
     margin: 0 auto;
-    /* background-color: lightblue; */
-    /* border: solid coral 2px; */
 }
 
+#events h2 {
+    padding-top: 40px;
+}
 #events h3 {
     padding-top: 15px;
 }
@@ -253,21 +259,40 @@ section  {
     margin-bottom: 25px;
 }
 
-#mySubmit {
-    background-color: var(--Apple);
-    margin: 0px 20px;
+#newsletter label {
+    float: left;
+    padding-left: 20px;
 }
 
+#mySubmit {
+    background-color: lightgray;
+    margin: 0 auto;
+}
+
+#mySubmit:hover {
+    background-color: var(--Apple);
+}
 
 footer {
+    background-color: lightgray;
+    /* border-top: solid darkgray 5px; */
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+footer p {
+    width: 300px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#footerGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 25px;
     width: 400px;
     margin: 0 auto;
-    background-color: lightgray;
-    
 }
 
 footer #footerIntro {
@@ -278,16 +303,35 @@ footer #footerLegal {
     grid-column: 1 / span 2;
 }
 
-footer section {
-    border: dotted red 4px;
-}
-
 footer h2 {
     font-size: 2em;
 }
 
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: var(--DarkOrange);
+}
+
+.topBorder {
+    border-top: solid darkgray 5px;
+}
+
 /*-------------MED SCREEN SIZE----------------*/
 @media screen and (min-width:900px){
+    #about {
+        color: var(--Apple);
+    }
+
+    #about p {
+        font-size: 2em;
+        background-color: rgba(255,255,255,0.8);
+        border: solid var(--Apple) 5px;
+    }
+
     #books { 
         width: 900px;
     }
@@ -329,7 +373,7 @@ footer h2 {
         grid-column: 2 / 2;
     }
 
-    footer {
+    #footerGrid {
         grid-template-columns: repeat(4, 1fr);
         width: 900px;
     }
@@ -404,9 +448,9 @@ footer h2 {
         grid-column: 3 / 3;
     }
 
-    footer {
+    #footerGrid {
         grid-template-columns: repeat(6, 1fr);
-        width: 1500px;
+        width: 1350px;
     }
 
     footer #footerIntro {
@@ -415,7 +459,7 @@ footer h2 {
 
     footer #footerLegal {
         grid-column: 5 / span 2;
-        padding-top: 150px;
+        padding-top: 100px;
     }
     
 }
