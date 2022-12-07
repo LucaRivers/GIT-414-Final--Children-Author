@@ -444,6 +444,7 @@ footer a:hover {
 
     footer #footerIntro {
         grid-column: 1 / span 2;
+        background-color: red;
     }
 
     footer #footerLegal {
