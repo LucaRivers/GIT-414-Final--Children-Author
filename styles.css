@@ -120,7 +120,6 @@ h4 {
     text-align: center;
 }
 
-
 img {
     max-width: 100%;
 }
@@ -128,7 +127,6 @@ img {
 section  {
     text-align: center;
 }
-
 
 #about {
     background-image: url("images/Claire-Singara.jpg");
@@ -146,8 +144,6 @@ section  {
     font-size: 2em;
     max-width: 1200px;
     margin: 0 auto;
-    /* background-color: rgba(255,255,255,0.8);
-    border: solid var(--Apple) 5px; */
 }
 
 #books {
@@ -275,7 +271,6 @@ section  {
 
 footer {
     background-color: lightgray;
-    /* border-top: solid darkgray 5px; */
     padding-top: 30px;
     padding-bottom: 50px;
 }
@@ -343,8 +338,6 @@ footer a:hover {
 
     #locationGrid {
         grid-template-columns: repeat(2, 1fr);
-        /* background-color: var(--Orange); */
-        /* border: solid red 5px; */
         width: 900px;
         margin: 0 auto;
     }
@@ -396,8 +389,6 @@ footer a:hover {
 
     #booksGrid {
         grid-template-columns: repeat(4, 1fr);
-        /* background-color: lavender;
-        border: solid red 5px; */
         width: 1450px;
         gap: 0px;
     }
@@ -418,10 +409,8 @@ footer a:hover {
     #locationGrid {
         grid-template-columns: repeat(4, 1fr);
         gap: 100px;
-        /* border: solid red 5px; */
         width: 1350px;
         margin: 0 auto;
-        /* background-color: var(--Apple); */
     }
 
     #about {
